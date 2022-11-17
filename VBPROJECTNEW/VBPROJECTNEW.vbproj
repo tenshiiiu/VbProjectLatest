@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E172889B-5B3F-4549-AEA8-F0838B8ADA02}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>VBPROJECTNEW.My.MyApplication</StartupObject>
+    <RootNamespace>VBPROJECTNEW</RootNamespace>
+    <AssemblyName>VBPROJECTNEW</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>VBPROJECTNEW.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>VBPROJECTNEW.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>..\..\VBPROJECT\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\..\VBPROJECT\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class Information\Class Information Add.Designer.vb">
+      <DependentUpon>Class Information Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class Information\Class Information Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class Information\Class Information Form.Designer.vb">
+      <DependentUpon>Class Information Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class Information\Class Information Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class Information\Class Information Update.Designer.vb">
+      <DependentUpon>Class Information Update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class Information\Class Information Update.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Menu.Designer.vb">
+      <DependentUpon>Main Menu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Login Form.Designer.vb">
+      <DependentUpon>Login Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\Reset Password.Designer.vb">
+      <DependentUpon>Reset Password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Reset Password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Register\Register Email.Designer.vb">
+      <DependentUpon>Register Email.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Register Email.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register\Register Form.Designer.vb">
+      <DependentUpon>Register Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Register Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register\Register Print Form.Designer.vb">
+      <DependentUpon>Register Print Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Register Print Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register\Register Slip Form.Designer.vb">
+      <DependentUpon>Register Slip Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Register Slip Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register\Register Subject.Designer.vb">
+      <DependentUpon>Register Subject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Register Subject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register\Student Choosing Form.Designer.vb">
+      <DependentUpon>Student Choosing Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Student Choosing Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register\Student Print Form.Designer.vb">
+      <DependentUpon>Student Print Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Student Print Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register\Student Registration Form.Designer.vb">
+      <DependentUpon>Student Registration Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Student Registration Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Log in Staff.Designer.vb">
+      <DependentUpon>Log in Staff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Log in Staff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Staff Add Form.Designer.vb">
+      <DependentUpon>Staff Add Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Staff Add Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Staff Form.Designer.vb">
+      <DependentUpon>Staff Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Staff Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\Staff Reset.Designer.vb">
+      <DependentUpon>Staff Reset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Staff\Staff Reset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Information\Student Information Add.Designer.vb">
+      <DependentUpon>Student Information Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student Information\Student Information Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Information\Student Information Form.Designer.vb">
+      <DependentUpon>Student Information Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student Information\Student Information Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Information\Student Information Update.Designer.vb">
+      <DependentUpon>Student Information Update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student Information\Student Information Update.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subject Information\Subject Information Add.Designer.vb">
+      <DependentUpon>Subject Information Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Subject Information\Subject Information Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subject Information\Subject Information Form.Designer.vb">
+      <DependentUpon>Subject Information Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Subject Information\Subject Information Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subject Information\Subject Information Update.Designer.vb">
+      <DependentUpon>Subject Information Update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Subject Information\Subject Information Update.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher Information\Teacher Information Add.Designer.vb">
+      <DependentUpon>Teacher Information Add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher Information\Teacher Information Add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher Information\Teacher Information Form.Designer.vb">
+      <DependentUpon>Teacher Information Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher Information\Teacher Information Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher Information\Teacher Information Update.Designer.vb">
+      <DependentUpon>Teacher Information Update.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher Information\Teacher Information Update.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Class Information\Class Information Add.resx">
+      <DependentUpon>Class Information Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class Information\Class Information Form.resx">
+      <DependentUpon>Class Information Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class Information\Class Information Update.resx">
+      <DependentUpon>Class Information Update.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Login Form.resx">
+      <DependentUpon>Login Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\Reset Password.resx">
+      <DependentUpon>Reset Password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Menu.resx">
+      <DependentUpon>Main Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register\Register Email.resx">
+      <DependentUpon>Register Email.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register\Register Form.resx">
+      <DependentUpon>Register Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register\Register Print Form.resx">
+      <DependentUpon>Register Print Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register\Register Slip Form.resx">
+      <DependentUpon>Register Slip Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register\Register Subject.resx">
+      <DependentUpon>Register Subject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register\Student Choosing Form.resx">
+      <DependentUpon>Student Choosing Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register\Student Print Form.resx">
+      <DependentUpon>Student Print Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register\Student Registration Form.resx">
+      <DependentUpon>Student Registration Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Log in Staff.resx">
+      <DependentUpon>Log in Staff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Staff Add Form.resx">
+      <DependentUpon>Staff Add Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Staff Form.resx">
+      <DependentUpon>Staff Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff\Staff Reset.resx">
+      <DependentUpon>Staff Reset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Information\Student Information Add.resx">
+      <DependentUpon>Student Information Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Information\Student Information Form.resx">
+      <DependentUpon>Student Information Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Information\Student Information Update.resx">
+      <DependentUpon>Student Information Update.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subject Information\Subject Information Add.resx">
+      <DependentUpon>Subject Information Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subject Information\Subject Information Form.resx">
+      <DependentUpon>Subject Information Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subject Information\Subject Information Update.resx">
+      <DependentUpon>Subject Information Update.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher Information\Teacher Information Add.resx">
+      <DependentUpon>Teacher Information Add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher Information\Teacher Information Form.resx">
+      <DependentUpon>Teacher Information Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher Information\Teacher Information Update.resx">
+      <DependentUpon>Teacher Information Update.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\School_Isometric %281%29.png" />
+    <None Include="Resources\Knowledge _Isometric.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

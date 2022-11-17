@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--Created by exporting the settings of a KryptonPalette instance.-->
+<!--For more information about Krypton visit www.ComponentFactory.com-->
+<!--WARNING: Modifying this file may render it invalid for importing.-->
+<KryptonPalette Version="18" Generated="Monday, 14 November 2022, 05:59">
+  <Properties>
+    <FormStyles>
+      <FormMain>
+        <StateCommon>
+          <Back>
+            <Color1 Type="Color" Value="250, 252, 252" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <GraphicsHint Type="PaletteGraphicsHint" Value="None" />
+            <Rounding Type="Int" Value="15" />
+          </Border>
+        </StateCommon>
+      </FormMain>
+    </FormStyles>
+    <HeaderStyles>
+      <HeaderForm>
+        <StateCommon>
+          <Back>
+            <Color1 Type="Color" Value="250, 252, 252" />
+            <Color2 Type="Color" Value="250, 252, 252" />
+          </Back>
+          <Content>
+            <Padding Type="Padding" Value="10, -1, -1, -1" />
+          </Content>
+        </StateCommon>
+      </HeaderForm>
+    </HeaderStyles>
+  </Properties>
+  <Images />
+</KryptonPalette>
