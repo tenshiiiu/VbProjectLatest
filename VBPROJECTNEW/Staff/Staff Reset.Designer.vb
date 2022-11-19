@@ -61,7 +61,7 @@ Partial Class Staff_Reset
         'passwordTextBox
         '
         Me.passwordTextBox.AlwaysActive = False
-        Me.passwordTextBox.Location = New System.Drawing.Point(345, 309)
+        Me.passwordTextBox.Location = New System.Drawing.Point(345, 312)
         Me.passwordTextBox.Name = "passwordTextBox"
         Me.passwordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.passwordTextBox.Size = New System.Drawing.Size(260, 43)
@@ -93,7 +93,7 @@ Partial Class Staff_Reset
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(346, 202)
+        Me.Label1.Location = New System.Drawing.Point(346, 205)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(77, 16)
         Me.Label1.TabIndex = 25
@@ -134,7 +134,7 @@ Partial Class Staff_Reset
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(346, 283)
+        Me.Label2.Location = New System.Drawing.Point(346, 286)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(68, 16)
         Me.Label2.TabIndex = 26
@@ -142,7 +142,7 @@ Partial Class Staff_Reset
         '
         'usernameTextBox
         '
-        Me.usernameTextBox.Location = New System.Drawing.Point(345, 229)
+        Me.usernameTextBox.Location = New System.Drawing.Point(345, 232)
         Me.usernameTextBox.Name = "usernameTextBox"
         Me.usernameTextBox.Size = New System.Drawing.Size(260, 43)
         Me.usernameTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))

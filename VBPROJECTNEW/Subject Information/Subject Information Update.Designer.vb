@@ -26,8 +26,6 @@ Partial Class Subject_Information_Update
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.KryptonPalette1 = New ComponentFactory.Krypton.Toolkit.KryptonPalette(Me.components)
-        Me.IDTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.maximumStudentTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.classIDTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
@@ -51,33 +49,6 @@ Partial Class Subject_Information_Update
         Me.KryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(252, Byte), Integer), CType(CType(252, Byte), Integer))
         Me.KryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(252, Byte), Integer), CType(CType(252, Byte), Integer))
         Me.KryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10, -1, -1, -1)
-        '
-        'IDTextBox
-        '
-        Me.IDTextBox.Location = New System.Drawing.Point(155, 220)
-        Me.IDTextBox.Name = "IDTextBox"
-        Me.IDTextBox.Size = New System.Drawing.Size(97, 43)
-        Me.IDTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.IDTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
-        Me.IDTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.IDTextBox.StateCommon.Border.Rounding = 10
-        Me.IDTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.IDTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IDTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
-        Me.IDTextBox.TabIndex = 106
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(160, 201)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(21, 16)
-        Me.Label3.TabIndex = 107
-        Me.Label3.Text = "ID"
         '
         'maximumStudentTextBox
         '
@@ -195,7 +166,7 @@ Partial Class Subject_Information_Update
         '
         'classLevelTextBox
         '
-        Me.classLevelTextBox.Location = New System.Drawing.Point(323, 201)
+        Me.classLevelTextBox.Location = New System.Drawing.Point(321, 112)
         Me.classLevelTextBox.Name = "classLevelTextBox"
         Me.classLevelTextBox.Size = New System.Drawing.Size(390, 43)
         Me.classLevelTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -214,7 +185,7 @@ Partial Class Subject_Information_Update
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(328, 182)
+        Me.Label2.Location = New System.Drawing.Point(326, 93)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(95, 16)
         Me.Label2.TabIndex = 98
@@ -222,7 +193,7 @@ Partial Class Subject_Information_Update
         '
         'SubjectNameTextBox
         '
-        Me.SubjectNameTextBox.Location = New System.Drawing.Point(323, 120)
+        Me.SubjectNameTextBox.Location = New System.Drawing.Point(321, 191)
         Me.SubjectNameTextBox.Name = "SubjectNameTextBox"
         Me.SubjectNameTextBox.Size = New System.Drawing.Size(390, 43)
         Me.SubjectNameTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -241,7 +212,7 @@ Partial Class Subject_Information_Update
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(328, 101)
+        Me.Label1.Location = New System.Drawing.Point(326, 172)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(99, 16)
         Me.Label1.TabIndex = 97
@@ -252,8 +223,6 @@ Partial Class Subject_Information_Update
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1008, 561)
-        Me.Controls.Add(Me.IDTextBox)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.maximumStudentTextBox)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.classIDTextBox)
@@ -276,8 +245,6 @@ Partial Class Subject_Information_Update
     End Sub
 
     Friend WithEvents KryptonPalette1 As ComponentFactory.Krypton.Toolkit.KryptonPalette
-    Friend WithEvents IDTextBox As KryptonTextBox
-    Friend WithEvents Label3 As Label
     Friend WithEvents maximumStudentTextBox As KryptonTextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents classIDTextBox As KryptonTextBox

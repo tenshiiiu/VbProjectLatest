@@ -26,24 +26,25 @@ Partial Class Teacher_Information_Update
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.KryptonPalette1 = New ComponentFactory.Krypton.Toolkit.KryptonPalette(Me.components)
-        Me.IDTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.genderTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
-        Me.Gender = New System.Windows.Forms.Label()
-        Me.addressTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.emailTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.DoBDateTimePicker = New ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker()
-        Me.PhoneNumberTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.NameTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.backButton = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.UpdateTeacherButton = New ComponentFactory.Krypton.Toolkit.KryptonButton()
-        Me.ICNumberTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
+        Me.updateTeacherGenderComboBox = New ComponentFactory.Krypton.Toolkit.KryptonComboBox()
+        Me.Gender = New System.Windows.Forms.Label()
+        Me.updateTeacherAddressTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.updateTeacherEmailTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.updateTeacherDoBDateTimePicker = New ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker()
+        Me.updateTeacherPhoneNumberTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.updateTeacherNameTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.updateTeacherICNumberTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.updateTeacherMarticNumberTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        CType(Me.updateTeacherGenderComboBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'KryptonPalette1
@@ -57,198 +58,6 @@ Partial Class Teacher_Information_Update
         Me.KryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(252, Byte), Integer), CType(CType(252, Byte), Integer))
         Me.KryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(252, Byte), Integer), CType(CType(252, Byte), Integer))
         Me.KryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10, -1, -1, -1)
-        '
-        'IDTextBox
-        '
-        Me.IDTextBox.Location = New System.Drawing.Point(259, 55)
-        Me.IDTextBox.Name = "IDTextBox"
-        Me.IDTextBox.Size = New System.Drawing.Size(86, 43)
-        Me.IDTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.IDTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
-        Me.IDTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.IDTextBox.StateCommon.Border.Rounding = 10
-        Me.IDTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.IDTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IDTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
-        Me.IDTextBox.TabIndex = 131
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(264, 36)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(21, 16)
-        Me.Label9.TabIndex = 132
-        Me.Label9.Text = "ID"
-        '
-        'genderTextBox
-        '
-        Me.genderTextBox.Location = New System.Drawing.Point(541, 282)
-        Me.genderTextBox.Name = "genderTextBox"
-        Me.genderTextBox.Size = New System.Drawing.Size(390, 43)
-        Me.genderTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.genderTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
-        Me.genderTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.genderTextBox.StateCommon.Border.Rounding = 10
-        Me.genderTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.genderTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.genderTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
-        Me.genderTextBox.TabIndex = 130
-        '
-        'Gender
-        '
-        Me.Gender.AutoSize = True
-        Me.Gender.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Gender.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Gender.Location = New System.Drawing.Point(546, 263)
-        Me.Gender.Name = "Gender"
-        Me.Gender.Size = New System.Drawing.Size(53, 16)
-        Me.Gender.TabIndex = 129
-        Me.Gender.Text = "Gender"
-        '
-        'addressTextBox
-        '
-        Me.addressTextBox.Location = New System.Drawing.Point(541, 123)
-        Me.addressTextBox.Name = "addressTextBox"
-        Me.addressTextBox.Size = New System.Drawing.Size(390, 43)
-        Me.addressTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.addressTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
-        Me.addressTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.addressTextBox.StateCommon.Border.Rounding = 10
-        Me.addressTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.addressTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.addressTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
-        Me.addressTextBox.TabIndex = 128
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(546, 104)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(59, 16)
-        Me.Label3.TabIndex = 127
-        Me.Label3.Text = "Address"
-        '
-        'emailTextBox
-        '
-        Me.emailTextBox.Location = New System.Drawing.Point(92, 282)
-        Me.emailTextBox.Name = "emailTextBox"
-        Me.emailTextBox.Size = New System.Drawing.Size(390, 43)
-        Me.emailTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.emailTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
-        Me.emailTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.emailTextBox.StateCommon.Border.Rounding = 10
-        Me.emailTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.emailTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.emailTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
-        Me.emailTextBox.TabIndex = 126
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(97, 263)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(42, 16)
-        Me.Label8.TabIndex = 125
-        Me.Label8.Text = "Email"
-        '
-        'DoBDateTimePicker
-        '
-        Me.DoBDateTimePicker.CustomFormat = "mm/dd/yyyy"
-        Me.DoBDateTimePicker.Location = New System.Drawing.Point(92, 351)
-        Me.DoBDateTimePicker.Name = "DoBDateTimePicker"
-        Me.DoBDateTimePicker.Palette = Me.KryptonPalette1
-        Me.DoBDateTimePicker.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom
-        Me.DoBDateTimePicker.Size = New System.Drawing.Size(390, 27)
-        Me.DoBDateTimePicker.StateCommon.Back.Color1 = System.Drawing.Color.White
-        Me.DoBDateTimePicker.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.DoBDateTimePicker.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
-        Me.DoBDateTimePicker.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.DoBDateTimePicker.StateCommon.Border.Rounding = 10
-        Me.DoBDateTimePicker.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.DoBDateTimePicker.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
-        Me.DoBDateTimePicker.TabIndex = 124
-        '
-        'PhoneNumberTextBox
-        '
-        Me.PhoneNumberTextBox.Location = New System.Drawing.Point(541, 202)
-        Me.PhoneNumberTextBox.Name = "PhoneNumberTextBox"
-        Me.PhoneNumberTextBox.Size = New System.Drawing.Size(390, 43)
-        Me.PhoneNumberTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.PhoneNumberTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
-        Me.PhoneNumberTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.PhoneNumberTextBox.StateCommon.Border.Rounding = 10
-        Me.PhoneNumberTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.PhoneNumberTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PhoneNumberTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
-        Me.PhoneNumberTextBox.TabIndex = 123
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(546, 183)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(98, 16)
-        Me.Label4.TabIndex = 122
-        Me.Label4.Text = "Phone Number"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(97, 332)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(80, 16)
-        Me.Label5.TabIndex = 121
-        Me.Label5.Text = "Date of Birth"
-        '
-        'NameTextBox
-        '
-        Me.NameTextBox.Location = New System.Drawing.Point(92, 202)
-        Me.NameTextBox.Name = "NameTextBox"
-        Me.NameTextBox.Size = New System.Drawing.Size(390, 43)
-        Me.NameTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.NameTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
-        Me.NameTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.NameTextBox.StateCommon.Border.Rounding = 10
-        Me.NameTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.NameTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NameTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
-        Me.NameTextBox.TabIndex = 119
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(97, 183)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(45, 16)
-        Me.Label6.TabIndex = 120
-        Me.Label6.Text = "Name"
         '
         'backButton
         '
@@ -282,7 +91,7 @@ Partial Class Teacher_Information_Update
         '
         'UpdateTeacherButton
         '
-        Me.UpdateTeacherButton.Location = New System.Drawing.Point(320, 452)
+        Me.UpdateTeacherButton.Location = New System.Drawing.Point(328, 483)
         Me.UpdateTeacherButton.Name = "UpdateTeacherButton"
         Me.UpdateTeacherButton.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
         Me.UpdateTeacherButton.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -310,82 +119,268 @@ Partial Class Teacher_Information_Update
         Me.UpdateTeacherButton.TabIndex = 117
         Me.UpdateTeacherButton.Values.Text = "Save Information"
         '
-        'ICNumberTextBox
+        'updateTeacherGenderComboBox
         '
-        Me.ICNumberTextBox.Location = New System.Drawing.Point(92, 123)
-        Me.ICNumberTextBox.Name = "ICNumberTextBox"
-        Me.ICNumberTextBox.Size = New System.Drawing.Size(390, 43)
-        Me.ICNumberTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.ICNumberTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
-        Me.ICNumberTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+        Me.updateTeacherGenderComboBox.DropDownWidth = 390
+        Me.updateTeacherGenderComboBox.Location = New System.Drawing.Point(520, 411)
+        Me.updateTeacherGenderComboBox.Name = "updateTeacherGenderComboBox"
+        Me.updateTeacherGenderComboBox.Size = New System.Drawing.Size(390, 21)
+        Me.updateTeacherGenderComboBox.TabIndex = 136
+        Me.updateTeacherGenderComboBox.Text = "KryptonComboBox1"
+        '
+        'Gender
+        '
+        Me.Gender.AutoSize = True
+        Me.Gender.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gender.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.Gender.Location = New System.Drawing.Point(517, 386)
+        Me.Gender.Name = "Gender"
+        Me.Gender.Size = New System.Drawing.Size(53, 16)
+        Me.Gender.TabIndex = 133
+        Me.Gender.Text = "Gender"
+        '
+        'updateTeacherAddressTextBox
+        '
+        Me.updateTeacherAddressTextBox.Location = New System.Drawing.Point(91, 311)
+        Me.updateTeacherAddressTextBox.Name = "updateTeacherAddressTextBox"
+        Me.updateTeacherAddressTextBox.Size = New System.Drawing.Size(390, 43)
+        Me.updateTeacherAddressTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.updateTeacherAddressTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
+        Me.updateTeacherAddressTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.ICNumberTextBox.StateCommon.Border.Rounding = 10
-        Me.ICNumberTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.ICNumberTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ICNumberTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
-        Me.ICNumberTextBox.TabIndex = 116
+        Me.updateTeacherAddressTextBox.StateCommon.Border.Rounding = 10
+        Me.updateTeacherAddressTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.updateTeacherAddressTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.updateTeacherAddressTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
+        Me.updateTeacherAddressTextBox.TabIndex = 132
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(96, 292)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(59, 16)
+        Me.Label3.TabIndex = 131
+        Me.Label3.Text = "Address"
+        '
+        'updateTeacherEmailTextBox
+        '
+        Me.updateTeacherEmailTextBox.Location = New System.Drawing.Point(91, 236)
+        Me.updateTeacherEmailTextBox.Name = "updateTeacherEmailTextBox"
+        Me.updateTeacherEmailTextBox.Size = New System.Drawing.Size(390, 43)
+        Me.updateTeacherEmailTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.updateTeacherEmailTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
+        Me.updateTeacherEmailTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.updateTeacherEmailTextBox.StateCommon.Border.Rounding = 10
+        Me.updateTeacherEmailTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.updateTeacherEmailTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.updateTeacherEmailTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
+        Me.updateTeacherEmailTextBox.TabIndex = 130
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.Label8.Location = New System.Drawing.Point(96, 217)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(42, 16)
+        Me.Label8.TabIndex = 129
+        Me.Label8.Text = "Email"
+        '
+        'updateTeacherDoBDateTimePicker
+        '
+        Me.updateTeacherDoBDateTimePicker.CustomFormat = "mm/dd/yyyy"
+        Me.updateTeacherDoBDateTimePicker.Location = New System.Drawing.Point(91, 405)
+        Me.updateTeacherDoBDateTimePicker.Name = "updateTeacherDoBDateTimePicker"
+        Me.updateTeacherDoBDateTimePicker.Palette = Me.KryptonPalette1
+        Me.updateTeacherDoBDateTimePicker.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom
+        Me.updateTeacherDoBDateTimePicker.Size = New System.Drawing.Size(390, 27)
+        Me.updateTeacherDoBDateTimePicker.StateCommon.Back.Color1 = System.Drawing.Color.White
+        Me.updateTeacherDoBDateTimePicker.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.updateTeacherDoBDateTimePicker.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
+        Me.updateTeacherDoBDateTimePicker.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.updateTeacherDoBDateTimePicker.StateCommon.Border.Rounding = 10
+        Me.updateTeacherDoBDateTimePicker.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.updateTeacherDoBDateTimePicker.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
+        Me.updateTeacherDoBDateTimePicker.TabIndex = 128
+        '
+        'updateTeacherPhoneNumberTextBox
+        '
+        Me.updateTeacherPhoneNumberTextBox.Location = New System.Drawing.Point(520, 311)
+        Me.updateTeacherPhoneNumberTextBox.Name = "updateTeacherPhoneNumberTextBox"
+        Me.updateTeacherPhoneNumberTextBox.Size = New System.Drawing.Size(390, 43)
+        Me.updateTeacherPhoneNumberTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.updateTeacherPhoneNumberTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
+        Me.updateTeacherPhoneNumberTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.updateTeacherPhoneNumberTextBox.StateCommon.Border.Rounding = 10
+        Me.updateTeacherPhoneNumberTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.updateTeacherPhoneNumberTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.updateTeacherPhoneNumberTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
+        Me.updateTeacherPhoneNumberTextBox.TabIndex = 127
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(525, 292)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(98, 16)
+        Me.Label4.TabIndex = 126
+        Me.Label4.Text = "Phone Number"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(96, 386)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(80, 16)
+        Me.Label5.TabIndex = 125
+        Me.Label5.Text = "Date of Birth"
+        '
+        'updateTeacherNameTextBox
+        '
+        Me.updateTeacherNameTextBox.Location = New System.Drawing.Point(91, 158)
+        Me.updateTeacherNameTextBox.Name = "updateTeacherNameTextBox"
+        Me.updateTeacherNameTextBox.Size = New System.Drawing.Size(390, 43)
+        Me.updateTeacherNameTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.updateTeacherNameTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
+        Me.updateTeacherNameTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.updateTeacherNameTextBox.StateCommon.Border.Rounding = 10
+        Me.updateTeacherNameTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.updateTeacherNameTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.updateTeacherNameTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
+        Me.updateTeacherNameTextBox.TabIndex = 123
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.Label6.Location = New System.Drawing.Point(96, 139)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(45, 16)
+        Me.Label6.TabIndex = 124
+        Me.Label6.Text = "Name"
+        '
+        'updateTeacherICNumberTextBox
+        '
+        Me.updateTeacherICNumberTextBox.Location = New System.Drawing.Point(520, 236)
+        Me.updateTeacherICNumberTextBox.Name = "updateTeacherICNumberTextBox"
+        Me.updateTeacherICNumberTextBox.Size = New System.Drawing.Size(390, 43)
+        Me.updateTeacherICNumberTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.updateTeacherICNumberTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
+        Me.updateTeacherICNumberTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.updateTeacherICNumberTextBox.StateCommon.Border.Rounding = 10
+        Me.updateTeacherICNumberTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.updateTeacherICNumberTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.updateTeacherICNumberTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
+        Me.updateTeacherICNumberTextBox.TabIndex = 122
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(97, 104)
+        Me.Label2.Location = New System.Drawing.Point(525, 217)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(71, 16)
-        Me.Label2.TabIndex = 115
+        Me.Label2.TabIndex = 121
         Me.Label2.Text = "IC Number"
+        '
+        'updateTeacherMarticNumberTextBox
+        '
+        Me.updateTeacherMarticNumberTextBox.Location = New System.Drawing.Point(520, 158)
+        Me.updateTeacherMarticNumberTextBox.Name = "updateTeacherMarticNumberTextBox"
+        Me.updateTeacherMarticNumberTextBox.Size = New System.Drawing.Size(390, 43)
+        Me.updateTeacherMarticNumberTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.updateTeacherMarticNumberTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
+        Me.updateTeacherMarticNumberTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
+            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.updateTeacherMarticNumberTextBox.StateCommon.Border.Rounding = 10
+        Me.updateTeacherMarticNumberTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.updateTeacherMarticNumberTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.updateTeacherMarticNumberTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
+        Me.updateTeacherMarticNumberTextBox.TabIndex = 119
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(525, 139)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(95, 16)
+        Me.Label1.TabIndex = 120
+        Me.Label1.Text = "Matric Number"
         '
         'Teacher_Information_Update
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1008, 561)
-        Me.Controls.Add(Me.IDTextBox)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.genderTextBox)
+        Me.Controls.Add(Me.updateTeacherGenderComboBox)
         Me.Controls.Add(Me.Gender)
-        Me.Controls.Add(Me.addressTextBox)
+        Me.Controls.Add(Me.updateTeacherAddressTextBox)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.emailTextBox)
+        Me.Controls.Add(Me.updateTeacherEmailTextBox)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.DoBDateTimePicker)
-        Me.Controls.Add(Me.PhoneNumberTextBox)
+        Me.Controls.Add(Me.updateTeacherDoBDateTimePicker)
+        Me.Controls.Add(Me.updateTeacherPhoneNumberTextBox)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.NameTextBox)
+        Me.Controls.Add(Me.updateTeacherNameTextBox)
         Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.updateTeacherICNumberTextBox)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.updateTeacherMarticNumberTextBox)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.backButton)
         Me.Controls.Add(Me.UpdateTeacherButton)
-        Me.Controls.Add(Me.ICNumberTextBox)
-        Me.Controls.Add(Me.Label2)
         Me.Name = "Teacher_Information_Update"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Teacher Information Update"
+        CType(Me.updateTeacherGenderComboBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents KryptonPalette1 As ComponentFactory.Krypton.Toolkit.KryptonPalette
-    Friend WithEvents IDTextBox As KryptonTextBox
-    Friend WithEvents Label9 As Label
-    Friend WithEvents genderTextBox As KryptonTextBox
-    Friend WithEvents Gender As Label
-    Friend WithEvents addressTextBox As KryptonTextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents emailTextBox As KryptonTextBox
-    Friend WithEvents Label8 As Label
-    Friend WithEvents DoBDateTimePicker As KryptonDateTimePicker
-    Friend WithEvents PhoneNumberTextBox As KryptonTextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents NameTextBox As KryptonTextBox
-    Friend WithEvents Label6 As Label
     Friend WithEvents backButton As KryptonButton
     Friend WithEvents UpdateTeacherButton As KryptonButton
-    Friend WithEvents ICNumberTextBox As KryptonTextBox
+    Friend WithEvents updateTeacherGenderComboBox As KryptonComboBox
+    Friend WithEvents Gender As Label
+    Friend WithEvents updateTeacherAddressTextBox As KryptonTextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents updateTeacherEmailTextBox As KryptonTextBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents updateTeacherDoBDateTimePicker As KryptonDateTimePicker
+    Friend WithEvents updateTeacherPhoneNumberTextBox As KryptonTextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents updateTeacherNameTextBox As KryptonTextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents updateTeacherICNumberTextBox As KryptonTextBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents updateTeacherMarticNumberTextBox As KryptonTextBox
+    Friend WithEvents Label1 As Label
 End Class
