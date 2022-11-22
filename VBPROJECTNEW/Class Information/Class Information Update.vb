@@ -30,4 +30,23 @@
         number.numberOnly(sender, e)
     End Sub
 
+    Private Sub UpdateClassButton_Click(sender As Object, e As EventArgs) Handles UpdateClassButton.Click
+        Dim editClassroomRecord As classroomRecord
+        Dim editOK As Boolean
+
+        With editClassroomRecord
+            .class_id = classIDTextBox.Text
+            .class_name = updateClassNameTextBox.Text
+            .maximum_student = maximumStudentTextBox.Text
+        End With
+
+        editOK = Classroom.updateClassroom(editClassroomRecord)
+
+        If editOK Then
+            MessageBox.Show("Classroom Updated")
+            Class_Information_Form.Show()
+            Me.Close()
+        End If
+
+    End Sub
 End Class

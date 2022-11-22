@@ -1,7 +1,7 @@
 ﻿Imports ComponentFactory.Krypton.Toolkit
 
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Subject_Information_Form
+Partial Class ViewStudentForm
     Inherits KryptonForm
 
     'Form overrides dispose to clean up the component list.
@@ -27,14 +27,13 @@ Partial Class Subject_Information_Form
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.KryptonPalette1 = New ComponentFactory.Krypton.Toolkit.KryptonPalette(Me.components)
-        Me.searchSubjectTextBox = New ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox()
-        Me.subjectDataGridView = New System.Windows.Forms.DataGridView()
-        Me.AddSubjectButton = New ComponentFactory.Krypton.Toolkit.KryptonButton()
-        Me.UpdateSubjectButton = New ComponentFactory.Krypton.Toolkit.KryptonButton()
+        Me.searchStudentTextBox = New ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox()
+        Me.studentDataGridView = New System.Windows.Forms.DataGridView()
+        Me.RegisterStudentButton = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.backToHomeButton = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.deleteSubjectButton = New ComponentFactory.Krypton.Toolkit.KryptonButton()
-        CType(Me.subjectDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.viewStudentSubjectButton = New ComponentFactory.Krypton.Toolkit.KryptonButton()
+        CType(Me.studentDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'KryptonPalette1
@@ -49,36 +48,36 @@ Partial Class Subject_Information_Form
         Me.KryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(252, Byte), Integer), CType(CType(252, Byte), Integer))
         Me.KryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10, -1, -1, -1)
         '
-        'searchSubjectTextBox
+        'searchStudentTextBox
         '
-        Me.searchSubjectTextBox.Location = New System.Drawing.Point(12, 95)
-        Me.searchSubjectTextBox.Name = "searchSubjectTextBox"
-        Me.searchSubjectTextBox.Size = New System.Drawing.Size(696, 33)
-        Me.searchSubjectTextBox.StateCommon.Back.Color1 = System.Drawing.Color.WhiteSmoke
-        Me.searchSubjectTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.searchSubjectTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+        Me.searchStudentTextBox.Location = New System.Drawing.Point(33, 110)
+        Me.searchStudentTextBox.Name = "searchStudentTextBox"
+        Me.searchStudentTextBox.Size = New System.Drawing.Size(689, 33)
+        Me.searchStudentTextBox.StateCommon.Back.Color1 = System.Drawing.Color.WhiteSmoke
+        Me.searchStudentTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.searchStudentTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.searchSubjectTextBox.StateCommon.Border.Rounding = 15
-        Me.searchSubjectTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.searchSubjectTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.searchSubjectTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(15, 3, 3, 3)
-        Me.searchSubjectTextBox.TabIndex = 28
+        Me.searchStudentTextBox.StateCommon.Border.Rounding = 15
+        Me.searchStudentTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.searchStudentTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.searchStudentTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(15, 3, 3, 3)
+        Me.searchStudentTextBox.TabIndex = 43
         '
-        'subjectDataGridView
+        'studentDataGridView
         '
-        Me.subjectDataGridView.AllowUserToAddRows = False
-        Me.subjectDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.subjectDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.subjectDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(252, Byte), Integer), CType(CType(252, Byte), Integer))
-        Me.subjectDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.subjectDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal
-        Me.subjectDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
-        Me.subjectDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.subjectDataGridView.GridColor = System.Drawing.SystemColors.ActiveCaption
-        Me.subjectDataGridView.Location = New System.Drawing.Point(20, 156)
-        Me.subjectDataGridView.Name = "subjectDataGridView"
-        Me.subjectDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        Me.studentDataGridView.AllowUserToAddRows = False
+        Me.studentDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.studentDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.studentDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(252, Byte), Integer), CType(CType(252, Byte), Integer))
+        Me.studentDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.studentDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal
+        Me.studentDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
+        Me.studentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.studentDataGridView.GridColor = System.Drawing.SystemColors.ActiveCaption
+        Me.studentDataGridView.Location = New System.Drawing.Point(26, 176)
+        Me.studentDataGridView.Name = "studentDataGridView"
+        Me.studentDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -86,51 +85,35 @@ Partial Class Subject_Information_Form
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(122, Byte), Integer))
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.subjectDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.subjectDataGridView.RowHeadersVisible = False
-        Me.subjectDataGridView.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.subjectDataGridView.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(252, Byte), Integer), CType(CType(252, Byte), Integer))
-        Me.subjectDataGridView.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.subjectDataGridView.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
-        Me.subjectDataGridView.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.DarkGray
-        Me.subjectDataGridView.Size = New System.Drawing.Size(688, 347)
-        Me.subjectDataGridView.TabIndex = 27
+        Me.studentDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.studentDataGridView.RowHeadersVisible = False
+        Me.studentDataGridView.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.studentDataGridView.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(252, Byte), Integer), CType(CType(252, Byte), Integer))
+        Me.studentDataGridView.RowTemplate.DefaultCellStyle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.studentDataGridView.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black
+        Me.studentDataGridView.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.DarkGray
+        Me.studentDataGridView.Size = New System.Drawing.Size(673, 348)
+        Me.studentDataGridView.TabIndex = 42
         '
-        'AddSubjectButton
+        'RegisterStudentButton
         '
-        Me.AddSubjectButton.Location = New System.Drawing.Point(736, 95)
-        Me.AddSubjectButton.Name = "AddSubjectButton"
-        Me.AddSubjectButton.Size = New System.Drawing.Size(260, 45)
-        Me.AddSubjectButton.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(58, Byte), Integer))
-        Me.AddSubjectButton.StateCommon.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
-        Me.AddSubjectButton.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+        Me.RegisterStudentButton.Location = New System.Drawing.Point(723, 176)
+        Me.RegisterStudentButton.Name = "RegisterStudentButton"
+        Me.RegisterStudentButton.Size = New System.Drawing.Size(260, 45)
+        Me.RegisterStudentButton.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(29, Byte), Integer), CType(CType(58, Byte), Integer))
+        Me.RegisterStudentButton.StateCommon.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
+        Me.RegisterStudentButton.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.AddSubjectButton.StateCommon.Border.Rounding = 5
-        Me.AddSubjectButton.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White
-        Me.AddSubjectButton.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AddSubjectButton.TabIndex = 26
-        Me.AddSubjectButton.Values.Text = "Add Subject"
-        '
-        'UpdateSubjectButton
-        '
-        Me.UpdateSubjectButton.Location = New System.Drawing.Point(736, 156)
-        Me.UpdateSubjectButton.Name = "UpdateSubjectButton"
-        Me.UpdateSubjectButton.Size = New System.Drawing.Size(260, 45)
-        Me.UpdateSubjectButton.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.UpdateSubjectButton.StateCommon.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
-        Me.UpdateSubjectButton.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.UpdateSubjectButton.StateCommon.Border.Rounding = 5
-        Me.UpdateSubjectButton.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White
-        Me.UpdateSubjectButton.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UpdateSubjectButton.TabIndex = 24
-        Me.UpdateSubjectButton.Values.Text = "Update Subject"
+        Me.RegisterStudentButton.StateCommon.Border.Rounding = 5
+        Me.RegisterStudentButton.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White
+        Me.RegisterStudentButton.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RegisterStudentButton.TabIndex = 41
+        Me.RegisterStudentButton.Values.Text = "Register Subject"
         '
         'backToHomeButton
         '
-        Me.backToHomeButton.Location = New System.Drawing.Point(736, 22)
+        Me.backToHomeButton.Location = New System.Drawing.Point(723, 32)
         Me.backToHomeButton.Name = "backToHomeButton"
         Me.backToHomeButton.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
         Me.backToHomeButton.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -155,7 +138,7 @@ Partial Class Subject_Information_Form
         Me.backToHomeButton.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
         Me.backToHomeButton.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
         Me.backToHomeButton.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.backToHomeButton.TabIndex = 23
+        Me.backToHomeButton.TabIndex = 38
         Me.backToHomeButton.Values.Text = "Back To Home"
         '
         'Label3
@@ -163,58 +146,55 @@ Partial Class Subject_Information_Form
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Consolas", 26.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(12, 22)
+        Me.Label3.Location = New System.Drawing.Point(26, 37)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(246, 41)
-        Me.Label3.TabIndex = 22
-        Me.Label3.Text = "SUBJECT LIST"
+        Me.Label3.Size = New System.Drawing.Size(398, 41)
+        Me.Label3.TabIndex = 37
+        Me.Label3.Text = "STUDENT SUBJECT LIST"
         '
-        'deleteSubjectButton
+        'viewStudentSubjectButton
         '
-        Me.deleteSubjectButton.Location = New System.Drawing.Point(736, 218)
-        Me.deleteSubjectButton.Name = "deleteSubjectButton"
-        Me.deleteSubjectButton.Size = New System.Drawing.Size(260, 45)
-        Me.deleteSubjectButton.StateCommon.Back.Color1 = System.Drawing.Color.DarkRed
-        Me.deleteSubjectButton.StateCommon.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
-        Me.deleteSubjectButton.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+        Me.viewStudentSubjectButton.Location = New System.Drawing.Point(723, 248)
+        Me.viewStudentSubjectButton.Name = "viewStudentSubjectButton"
+        Me.viewStudentSubjectButton.Size = New System.Drawing.Size(260, 45)
+        Me.viewStudentSubjectButton.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.viewStudentSubjectButton.StateCommon.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
+        Me.viewStudentSubjectButton.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.deleteSubjectButton.StateCommon.Border.Rounding = 5
-        Me.deleteSubjectButton.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White
-        Me.deleteSubjectButton.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.deleteSubjectButton.TabIndex = 29
-        Me.deleteSubjectButton.Values.Text = "Delete Subject"
+        Me.viewStudentSubjectButton.StateCommon.Border.Rounding = 5
+        Me.viewStudentSubjectButton.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White
+        Me.viewStudentSubjectButton.StateCommon.Content.ShortText.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.viewStudentSubjectButton.TabIndex = 39
+        Me.viewStudentSubjectButton.Values.Text = "View Student Subject List"
         '
-        'Subject_Information_Form
+        'ViewStudentForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1008, 561)
-        Me.Controls.Add(Me.deleteSubjectButton)
-        Me.Controls.Add(Me.searchSubjectTextBox)
-        Me.Controls.Add(Me.subjectDataGridView)
-        Me.Controls.Add(Me.AddSubjectButton)
-        Me.Controls.Add(Me.UpdateSubjectButton)
+        Me.Controls.Add(Me.searchStudentTextBox)
+        Me.Controls.Add(Me.studentDataGridView)
+        Me.Controls.Add(Me.RegisterStudentButton)
+        Me.Controls.Add(Me.viewStudentSubjectButton)
         Me.Controls.Add(Me.backToHomeButton)
         Me.Controls.Add(Me.Label3)
-        Me.Name = "Subject_Information_Form"
+        Me.Name = "ViewStudentForm"
         Me.Palette = Me.KryptonPalette1
         Me.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom
-        Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Subject_Information_Form"
-        CType(Me.subjectDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "ViewStudentForm"
+        CType(Me.studentDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents KryptonPalette1 As ComponentFactory.Krypton.Toolkit.KryptonPalette
-    Friend WithEvents searchSubjectTextBox As KryptonMaskedTextBox
-    Friend WithEvents subjectDataGridView As DataGridView
-    Friend WithEvents AddSubjectButton As KryptonButton
-    Friend WithEvents UpdateSubjectButton As KryptonButton
+    Friend WithEvents searchStudentTextBox As KryptonMaskedTextBox
+    Friend WithEvents studentDataGridView As DataGridView
+    Friend WithEvents RegisterStudentButton As KryptonButton
     Friend WithEvents backToHomeButton As KryptonButton
     Friend WithEvents Label3 As Label
-    Friend WithEvents deleteSubjectButton As KryptonButton
+    Friend WithEvents viewStudentSubjectButton As KryptonButton
 End Class

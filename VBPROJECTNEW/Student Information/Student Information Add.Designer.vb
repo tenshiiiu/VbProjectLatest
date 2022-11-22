@@ -43,8 +43,6 @@ Partial Class Student_Information_Add
         Me.Label2 = New System.Windows.Forms.Label()
         Me.addStudentMarticNumberTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.addStudentClassIDTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
-        Me.ClassIDLabel = New System.Windows.Forms.Label()
         Me.addStudentGenderComboBox = New ComponentFactory.Krypton.Toolkit.KryptonComboBox()
         CType(Me.addStudentGenderComboBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -66,7 +64,7 @@ Partial Class Student_Information_Add
         Me.Gender.AutoSize = True
         Me.Gender.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Gender.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Gender.Location = New System.Drawing.Point(482, 389)
+        Me.Gender.Location = New System.Drawing.Point(500, 352)
         Me.Gender.Name = "Gender"
         Me.Gender.Size = New System.Drawing.Size(53, 16)
         Me.Gender.TabIndex = 85
@@ -74,7 +72,7 @@ Partial Class Student_Information_Add
         '
         'addStudentAddressTextBox
         '
-        Me.addStudentAddressTextBox.Location = New System.Drawing.Point(485, 322)
+        Me.addStudentAddressTextBox.Location = New System.Drawing.Point(503, 285)
         Me.addStudentAddressTextBox.Name = "addStudentAddressTextBox"
         Me.addStudentAddressTextBox.Size = New System.Drawing.Size(390, 43)
         Me.addStudentAddressTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -93,7 +91,7 @@ Partial Class Student_Information_Add
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(490, 303)
+        Me.Label3.Location = New System.Drawing.Point(508, 266)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(59, 16)
         Me.Label3.TabIndex = 83
@@ -101,7 +99,7 @@ Partial Class Student_Information_Add
         '
         'addStudentEmailTextBox
         '
-        Me.addStudentEmailTextBox.Location = New System.Drawing.Point(56, 239)
+        Me.addStudentEmailTextBox.Location = New System.Drawing.Point(74, 285)
         Me.addStudentEmailTextBox.Name = "addStudentEmailTextBox"
         Me.addStudentEmailTextBox.Size = New System.Drawing.Size(390, 43)
         Me.addStudentEmailTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -120,7 +118,7 @@ Partial Class Student_Information_Add
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(61, 220)
+        Me.Label8.Location = New System.Drawing.Point(79, 266)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(42, 16)
         Me.Label8.TabIndex = 81
@@ -128,8 +126,8 @@ Partial Class Student_Information_Add
         '
         'addStudentDoBDateTimePicker
         '
-        Me.addStudentDoBDateTimePicker.CustomFormat = "mm/dd/yyyy"
-        Me.addStudentDoBDateTimePicker.Location = New System.Drawing.Point(56, 408)
+        Me.addStudentDoBDateTimePicker.CustomFormat = "yyyy/mm/dd"
+        Me.addStudentDoBDateTimePicker.Location = New System.Drawing.Point(74, 371)
         Me.addStudentDoBDateTimePicker.Name = "addStudentDoBDateTimePicker"
         Me.addStudentDoBDateTimePicker.Palette = Me.KryptonPalette1
         Me.addStudentDoBDateTimePicker.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom
@@ -147,7 +145,7 @@ Partial Class Student_Information_Add
         '
         'addStudentPhoneNumberTextBox
         '
-        Me.addStudentPhoneNumberTextBox.Location = New System.Drawing.Point(485, 239)
+        Me.addStudentPhoneNumberTextBox.Location = New System.Drawing.Point(503, 202)
         Me.addStudentPhoneNumberTextBox.Name = "addStudentPhoneNumberTextBox"
         Me.addStudentPhoneNumberTextBox.Size = New System.Drawing.Size(390, 43)
         Me.addStudentPhoneNumberTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -166,7 +164,7 @@ Partial Class Student_Information_Add
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(490, 220)
+        Me.Label4.Location = New System.Drawing.Point(508, 183)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(98, 16)
         Me.Label4.TabIndex = 76
@@ -177,7 +175,7 @@ Partial Class Student_Information_Add
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(61, 389)
+        Me.Label5.Location = New System.Drawing.Point(79, 352)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(80, 16)
         Me.Label5.TabIndex = 75
@@ -185,7 +183,7 @@ Partial Class Student_Information_Add
         '
         'addStudentNameTextBox
         '
-        Me.addStudentNameTextBox.Location = New System.Drawing.Point(266, 83)
+        Me.addStudentNameTextBox.Location = New System.Drawing.Point(74, 127)
         Me.addStudentNameTextBox.Name = "addStudentNameTextBox"
         Me.addStudentNameTextBox.Size = New System.Drawing.Size(390, 43)
         Me.addStudentNameTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -204,7 +202,7 @@ Partial Class Student_Information_Add
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(271, 64)
+        Me.Label6.Location = New System.Drawing.Point(79, 108)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(45, 16)
         Me.Label6.TabIndex = 74
@@ -272,7 +270,7 @@ Partial Class Student_Information_Add
         '
         'addStudentICNumberTextBox
         '
-        Me.addStudentICNumberTextBox.Location = New System.Drawing.Point(485, 164)
+        Me.addStudentICNumberTextBox.Location = New System.Drawing.Point(503, 127)
         Me.addStudentICNumberTextBox.Name = "addStudentICNumberTextBox"
         Me.addStudentICNumberTextBox.Size = New System.Drawing.Size(390, 43)
         Me.addStudentICNumberTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -291,7 +289,7 @@ Partial Class Student_Information_Add
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(490, 145)
+        Me.Label2.Location = New System.Drawing.Point(508, 108)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(71, 16)
         Me.Label2.TabIndex = 69
@@ -299,7 +297,7 @@ Partial Class Student_Information_Add
         '
         'addStudentMarticNumberTextBox
         '
-        Me.addStudentMarticNumberTextBox.Location = New System.Drawing.Point(56, 164)
+        Me.addStudentMarticNumberTextBox.Location = New System.Drawing.Point(74, 210)
         Me.addStudentMarticNumberTextBox.Name = "addStudentMarticNumberTextBox"
         Me.addStudentMarticNumberTextBox.Size = New System.Drawing.Size(390, 43)
         Me.addStudentMarticNumberTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -318,47 +316,20 @@ Partial Class Student_Information_Add
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(61, 145)
+        Me.Label1.Location = New System.Drawing.Point(79, 191)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(95, 16)
         Me.Label1.TabIndex = 68
         Me.Label1.Text = "Matric Number"
         '
-        'addStudentClassIDTextBox
-        '
-        Me.addStudentClassIDTextBox.Location = New System.Drawing.Point(56, 322)
-        Me.addStudentClassIDTextBox.Name = "addStudentClassIDTextBox"
-        Me.addStudentClassIDTextBox.Size = New System.Drawing.Size(390, 43)
-        Me.addStudentClassIDTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.addStudentClassIDTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
-        Me.addStudentClassIDTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.addStudentClassIDTextBox.StateCommon.Border.Rounding = 10
-        Me.addStudentClassIDTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.addStudentClassIDTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.addStudentClassIDTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
-        Me.addStudentClassIDTextBox.TabIndex = 87
-        '
-        'ClassIDLabel
-        '
-        Me.ClassIDLabel.AutoSize = True
-        Me.ClassIDLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ClassIDLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.ClassIDLabel.Location = New System.Drawing.Point(61, 303)
-        Me.ClassIDLabel.Name = "ClassIDLabel"
-        Me.ClassIDLabel.Size = New System.Drawing.Size(58, 16)
-        Me.ClassIDLabel.TabIndex = 88
-        Me.ClassIDLabel.Text = "Class ID"
-        '
         'addStudentGenderComboBox
         '
         Me.addStudentGenderComboBox.DropDownWidth = 390
-        Me.addStudentGenderComboBox.Location = New System.Drawing.Point(485, 414)
+        Me.addStudentGenderComboBox.Items.AddRange(New Object() {"Male", "Female"})
+        Me.addStudentGenderComboBox.Location = New System.Drawing.Point(503, 377)
         Me.addStudentGenderComboBox.Name = "addStudentGenderComboBox"
         Me.addStudentGenderComboBox.Size = New System.Drawing.Size(390, 21)
         Me.addStudentGenderComboBox.TabIndex = 92
-        Me.addStudentGenderComboBox.Text = "KryptonComboBox1"
         '
         'Student_Information_Add
         '
@@ -366,8 +337,6 @@ Partial Class Student_Information_Add
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1008, 561)
         Me.Controls.Add(Me.addStudentGenderComboBox)
-        Me.Controls.Add(Me.addStudentClassIDTextBox)
-        Me.Controls.Add(Me.ClassIDLabel)
         Me.Controls.Add(Me.Gender)
         Me.Controls.Add(Me.addStudentAddressTextBox)
         Me.Controls.Add(Me.Label3)
@@ -415,7 +384,5 @@ Partial Class Student_Information_Add
     Friend WithEvents Label2 As Label
     Friend WithEvents addStudentMarticNumberTextBox As KryptonTextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents addStudentClassIDTextBox As KryptonTextBox
-    Friend WithEvents ClassIDLabel As Label
     Friend WithEvents addStudentGenderComboBox As KryptonComboBox
 End Class

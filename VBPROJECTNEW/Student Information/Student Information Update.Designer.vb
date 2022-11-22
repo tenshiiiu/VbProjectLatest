@@ -29,8 +29,6 @@ Partial Class Student_Information_Update
         Me.backButton = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.editStudentButton = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.updateStudentGenderComboBox = New ComponentFactory.Krypton.Toolkit.KryptonComboBox()
-        Me.updateStudentClassIDTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
-        Me.ClassIDLabel = New System.Windows.Forms.Label()
         Me.Gender = New System.Windows.Forms.Label()
         Me.updateStudentAddressTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -124,45 +122,18 @@ Partial Class Student_Information_Update
         'updateStudentGenderComboBox
         '
         Me.updateStudentGenderComboBox.DropDownWidth = 390
-        Me.updateStudentGenderComboBox.Location = New System.Drawing.Point(527, 419)
+        Me.updateStudentGenderComboBox.Items.AddRange(New Object() {"Male", "Female"})
+        Me.updateStudentGenderComboBox.Location = New System.Drawing.Point(520, 394)
         Me.updateStudentGenderComboBox.Name = "updateStudentGenderComboBox"
         Me.updateStudentGenderComboBox.Size = New System.Drawing.Size(390, 21)
         Me.updateStudentGenderComboBox.TabIndex = 114
-        Me.updateStudentGenderComboBox.Text = "KryptonComboBox1"
-        '
-        'updateStudentClassIDTextBox
-        '
-        Me.updateStudentClassIDTextBox.Location = New System.Drawing.Point(98, 327)
-        Me.updateStudentClassIDTextBox.Name = "updateStudentClassIDTextBox"
-        Me.updateStudentClassIDTextBox.Size = New System.Drawing.Size(390, 43)
-        Me.updateStudentClassIDTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.updateStudentClassIDTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
-        Me.updateStudentClassIDTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
-            Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.updateStudentClassIDTextBox.StateCommon.Border.Rounding = 10
-        Me.updateStudentClassIDTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.updateStudentClassIDTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.updateStudentClassIDTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
-        Me.updateStudentClassIDTextBox.TabIndex = 112
-        '
-        'ClassIDLabel
-        '
-        Me.ClassIDLabel.AutoSize = True
-        Me.ClassIDLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ClassIDLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.ClassIDLabel.Location = New System.Drawing.Point(103, 308)
-        Me.ClassIDLabel.Name = "ClassIDLabel"
-        Me.ClassIDLabel.Size = New System.Drawing.Size(58, 16)
-        Me.ClassIDLabel.TabIndex = 113
-        Me.ClassIDLabel.Text = "Class ID"
         '
         'Gender
         '
         Me.Gender.AutoSize = True
         Me.Gender.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Gender.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Gender.Location = New System.Drawing.Point(524, 394)
+        Me.Gender.Location = New System.Drawing.Point(517, 363)
         Me.Gender.Name = "Gender"
         Me.Gender.Size = New System.Drawing.Size(53, 16)
         Me.Gender.TabIndex = 111
@@ -170,7 +141,7 @@ Partial Class Student_Information_Update
         '
         'updateStudentAddressTextBox
         '
-        Me.updateStudentAddressTextBox.Location = New System.Drawing.Point(527, 327)
+        Me.updateStudentAddressTextBox.Location = New System.Drawing.Point(520, 296)
         Me.updateStudentAddressTextBox.Name = "updateStudentAddressTextBox"
         Me.updateStudentAddressTextBox.Size = New System.Drawing.Size(390, 43)
         Me.updateStudentAddressTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -189,7 +160,7 @@ Partial Class Student_Information_Update
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(532, 308)
+        Me.Label3.Location = New System.Drawing.Point(525, 277)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(59, 16)
         Me.Label3.TabIndex = 109
@@ -197,7 +168,7 @@ Partial Class Student_Information_Update
         '
         'updateStudentEmailTextBox
         '
-        Me.updateStudentEmailTextBox.Location = New System.Drawing.Point(98, 244)
+        Me.updateStudentEmailTextBox.Location = New System.Drawing.Point(91, 296)
         Me.updateStudentEmailTextBox.Name = "updateStudentEmailTextBox"
         Me.updateStudentEmailTextBox.Size = New System.Drawing.Size(390, 43)
         Me.updateStudentEmailTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -216,7 +187,7 @@ Partial Class Student_Information_Update
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(103, 225)
+        Me.Label8.Location = New System.Drawing.Point(96, 277)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(42, 16)
         Me.Label8.TabIndex = 107
@@ -224,8 +195,8 @@ Partial Class Student_Information_Update
         '
         'updateStudentDoBDateTimePicker
         '
-        Me.updateStudentDoBDateTimePicker.CustomFormat = "mm/dd/yyyy"
-        Me.updateStudentDoBDateTimePicker.Location = New System.Drawing.Point(98, 413)
+        Me.updateStudentDoBDateTimePicker.CustomFormat = "yyyy/mm/dd"
+        Me.updateStudentDoBDateTimePicker.Location = New System.Drawing.Point(99, 388)
         Me.updateStudentDoBDateTimePicker.Name = "updateStudentDoBDateTimePicker"
         Me.updateStudentDoBDateTimePicker.Palette = Me.KryptonPalette1
         Me.updateStudentDoBDateTimePicker.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom
@@ -243,7 +214,7 @@ Partial Class Student_Information_Update
         '
         'updateStudentPhoneNumberTextBox
         '
-        Me.updateStudentPhoneNumberTextBox.Location = New System.Drawing.Point(527, 244)
+        Me.updateStudentPhoneNumberTextBox.Location = New System.Drawing.Point(520, 221)
         Me.updateStudentPhoneNumberTextBox.Name = "updateStudentPhoneNumberTextBox"
         Me.updateStudentPhoneNumberTextBox.Size = New System.Drawing.Size(390, 43)
         Me.updateStudentPhoneNumberTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -262,7 +233,7 @@ Partial Class Student_Information_Update
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(532, 225)
+        Me.Label4.Location = New System.Drawing.Point(525, 194)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(98, 16)
         Me.Label4.TabIndex = 104
@@ -273,7 +244,7 @@ Partial Class Student_Information_Update
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(103, 394)
+        Me.Label5.Location = New System.Drawing.Point(96, 363)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(80, 16)
         Me.Label5.TabIndex = 103
@@ -281,7 +252,7 @@ Partial Class Student_Information_Update
         '
         'updateStudentNameTextBox
         '
-        Me.updateStudentNameTextBox.Location = New System.Drawing.Point(308, 88)
+        Me.updateStudentNameTextBox.Location = New System.Drawing.Point(91, 138)
         Me.updateStudentNameTextBox.Name = "updateStudentNameTextBox"
         Me.updateStudentNameTextBox.Size = New System.Drawing.Size(390, 43)
         Me.updateStudentNameTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -300,7 +271,7 @@ Partial Class Student_Information_Update
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(313, 69)
+        Me.Label6.Location = New System.Drawing.Point(96, 119)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(45, 16)
         Me.Label6.TabIndex = 102
@@ -308,7 +279,7 @@ Partial Class Student_Information_Update
         '
         'updateStudentICNumberTextBox
         '
-        Me.updateStudentICNumberTextBox.Location = New System.Drawing.Point(527, 169)
+        Me.updateStudentICNumberTextBox.Location = New System.Drawing.Point(520, 138)
         Me.updateStudentICNumberTextBox.Name = "updateStudentICNumberTextBox"
         Me.updateStudentICNumberTextBox.Size = New System.Drawing.Size(390, 43)
         Me.updateStudentICNumberTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -327,7 +298,7 @@ Partial Class Student_Information_Update
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(532, 150)
+        Me.Label2.Location = New System.Drawing.Point(525, 119)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(71, 16)
         Me.Label2.TabIndex = 99
@@ -335,7 +306,7 @@ Partial Class Student_Information_Update
         '
         'updateStudentMarticNumberTextBox
         '
-        Me.updateStudentMarticNumberTextBox.Location = New System.Drawing.Point(98, 169)
+        Me.updateStudentMarticNumberTextBox.Location = New System.Drawing.Point(91, 221)
         Me.updateStudentMarticNumberTextBox.Name = "updateStudentMarticNumberTextBox"
         Me.updateStudentMarticNumberTextBox.Size = New System.Drawing.Size(390, 43)
         Me.updateStudentMarticNumberTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -354,7 +325,7 @@ Partial Class Student_Information_Update
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(103, 150)
+        Me.Label1.Location = New System.Drawing.Point(96, 202)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(95, 16)
         Me.Label1.TabIndex = 98
@@ -366,8 +337,6 @@ Partial Class Student_Information_Update
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1008, 561)
         Me.Controls.Add(Me.updateStudentGenderComboBox)
-        Me.Controls.Add(Me.updateStudentClassIDTextBox)
-        Me.Controls.Add(Me.ClassIDLabel)
         Me.Controls.Add(Me.Gender)
         Me.Controls.Add(Me.updateStudentAddressTextBox)
         Me.Controls.Add(Me.Label3)
@@ -399,8 +368,6 @@ Partial Class Student_Information_Update
     Friend WithEvents backButton As KryptonButton
     Friend WithEvents editStudentButton As KryptonButton
     Friend WithEvents updateStudentGenderComboBox As KryptonComboBox
-    Friend WithEvents updateStudentClassIDTextBox As KryptonTextBox
-    Friend WithEvents ClassIDLabel As Label
     Friend WithEvents Gender As Label
     Friend WithEvents updateStudentAddressTextBox As KryptonTextBox
     Friend WithEvents Label3 As Label

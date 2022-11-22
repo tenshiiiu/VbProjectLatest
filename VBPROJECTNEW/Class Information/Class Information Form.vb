@@ -90,13 +90,8 @@ Public Class Class_Information_Form
                 ID = classDataGridView.Rows(e.RowIndex).Cells(e.ColumnIndex).Value
             End If
 
-            If IsDBNull(classID) Then
-                MessageBox.Show("")
-
-            End If
-
         Catch ex As Exception
-            'MessageBox.Show(ex.ToString)
+            MessageBox.Show(ex.ToString)
         End Try
     End Sub
 End Class

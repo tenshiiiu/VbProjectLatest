@@ -8,7 +8,7 @@
 
     End Sub
 
-    Private Sub SubjectListToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SubjectListToolStripMenuItem.Click
+    Private Sub SubjectListToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Subject_Information_Form.Show()
         Me.Close()
     End Sub
@@ -33,4 +33,8 @@
         Me.Close()
     End Sub
 
+    Private Sub StudentSubjectListToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StudentSubjectListToolStripMenuItem.Click
+        ViewStudentForm.Show()
+        Me.Close()
+    End Sub
 End Class

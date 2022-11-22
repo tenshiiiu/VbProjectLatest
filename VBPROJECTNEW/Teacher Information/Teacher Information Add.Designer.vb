@@ -43,7 +43,7 @@ Partial Class Teacher_Information_Add
         Me.Label6 = New System.Windows.Forms.Label()
         Me.addTeacherICNumberTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.addTeacherMarticNumberTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
+        Me.addTeacherIDTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.addTeacherGenderComboBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -123,11 +123,11 @@ Partial Class Teacher_Information_Add
         'addTeacherGenderComboBox
         '
         Me.addTeacherGenderComboBox.DropDownWidth = 390
+        Me.addTeacherGenderComboBox.Items.AddRange(New Object() {"Male", "Female"})
         Me.addTeacherGenderComboBox.Location = New System.Drawing.Point(514, 398)
         Me.addTeacherGenderComboBox.Name = "addTeacherGenderComboBox"
         Me.addTeacherGenderComboBox.Size = New System.Drawing.Size(390, 21)
         Me.addTeacherGenderComboBox.TabIndex = 114
-        Me.addTeacherGenderComboBox.Text = "KryptonComboBox1"
         '
         'Gender
         '
@@ -253,7 +253,7 @@ Partial Class Teacher_Information_Add
         '
         'addTeacherNameTextBox
         '
-        Me.addTeacherNameTextBox.Location = New System.Drawing.Point(85, 148)
+        Me.addTeacherNameTextBox.Location = New System.Drawing.Point(514, 158)
         Me.addTeacherNameTextBox.Name = "addTeacherNameTextBox"
         Me.addTeacherNameTextBox.Size = New System.Drawing.Size(390, 43)
         Me.addTeacherNameTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -272,7 +272,7 @@ Partial Class Teacher_Information_Add
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(90, 129)
+        Me.Label6.Location = New System.Drawing.Point(519, 139)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(45, 16)
         Me.Label6.TabIndex = 102
@@ -280,7 +280,7 @@ Partial Class Teacher_Information_Add
         '
         'addTeacherICNumberTextBox
         '
-        Me.addTeacherICNumberTextBox.Location = New System.Drawing.Point(514, 148)
+        Me.addTeacherICNumberTextBox.Location = New System.Drawing.Point(85, 223)
         Me.addTeacherICNumberTextBox.Name = "addTeacherICNumberTextBox"
         Me.addTeacherICNumberTextBox.Size = New System.Drawing.Size(390, 43)
         Me.addTeacherICNumberTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -299,38 +299,38 @@ Partial Class Teacher_Information_Add
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(519, 129)
+        Me.Label2.Location = New System.Drawing.Point(90, 204)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(71, 16)
         Me.Label2.TabIndex = 99
         Me.Label2.Text = "IC Number"
         '
-        'addTeacherMarticNumberTextBox
+        'addTeacherIDTextBox
         '
-        Me.addTeacherMarticNumberTextBox.Location = New System.Drawing.Point(85, 223)
-        Me.addTeacherMarticNumberTextBox.Name = "addTeacherMarticNumberTextBox"
-        Me.addTeacherMarticNumberTextBox.Size = New System.Drawing.Size(390, 43)
-        Me.addTeacherMarticNumberTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.addTeacherMarticNumberTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
-        Me.addTeacherMarticNumberTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+        Me.addTeacherIDTextBox.Location = New System.Drawing.Point(85, 158)
+        Me.addTeacherIDTextBox.Name = "addTeacherIDTextBox"
+        Me.addTeacherIDTextBox.Size = New System.Drawing.Size(390, 43)
+        Me.addTeacherIDTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.addTeacherIDTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
+        Me.addTeacherIDTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.addTeacherMarticNumberTextBox.StateCommon.Border.Rounding = 10
-        Me.addTeacherMarticNumberTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.addTeacherMarticNumberTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.addTeacherMarticNumberTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
-        Me.addTeacherMarticNumberTextBox.TabIndex = 97
+        Me.addTeacherIDTextBox.StateCommon.Border.Rounding = 10
+        Me.addTeacherIDTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.addTeacherIDTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.addTeacherIDTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
+        Me.addTeacherIDTextBox.TabIndex = 97
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(90, 204)
+        Me.Label1.Location = New System.Drawing.Point(90, 139)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(95, 16)
+        Me.Label1.Size = New System.Drawing.Size(75, 16)
         Me.Label1.TabIndex = 98
-        Me.Label1.Text = "Matric Number"
+        Me.Label1.Text = "Teacher ID"
         '
         'Teacher_Information_Add
         '
@@ -351,7 +351,7 @@ Partial Class Teacher_Information_Add
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.addTeacherICNumberTextBox)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.addTeacherMarticNumberTextBox)
+        Me.Controls.Add(Me.addTeacherIDTextBox)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.backButton)
         Me.Controls.Add(Me.addTeacherButton)
@@ -384,6 +384,6 @@ Partial Class Teacher_Information_Add
     Friend WithEvents Label6 As Label
     Friend WithEvents addTeacherICNumberTextBox As KryptonTextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents addTeacherMarticNumberTextBox As KryptonTextBox
+    Friend WithEvents addTeacherIDTextBox As KryptonTextBox
     Friend WithEvents Label1 As Label
 End Class

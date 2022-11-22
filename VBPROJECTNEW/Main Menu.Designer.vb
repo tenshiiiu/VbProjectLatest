@@ -30,9 +30,9 @@ Partial Class MainMenuForm
         Me.LogOutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UserManagementToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RegisterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.StudentRegistrationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EmailRegistrationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SubjectListToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StudentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StudentSubjectListToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RegisterStudentSubjectToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TeacherInformationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListOfTeacherToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StudentInformationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -98,28 +98,29 @@ Partial Class MainMenuForm
         '
         'RegisterToolStripMenuItem
         '
-        Me.RegisterToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StudentRegistrationToolStripMenuItem, Me.EmailRegistrationToolStripMenuItem, Me.SubjectListToolStripMenuItem})
+        Me.RegisterToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StudentToolStripMenuItem})
         Me.RegisterToolStripMenuItem.Name = "RegisterToolStripMenuItem"
         Me.RegisterToolStripMenuItem.Size = New System.Drawing.Size(93, 23)
         Me.RegisterToolStripMenuItem.Text = "Register"
         '
-        'StudentRegistrationToolStripMenuItem
+        'StudentToolStripMenuItem
         '
-        Me.StudentRegistrationToolStripMenuItem.Name = "StudentRegistrationToolStripMenuItem"
-        Me.StudentRegistrationToolStripMenuItem.Size = New System.Drawing.Size(258, 24)
-        Me.StudentRegistrationToolStripMenuItem.Text = "Student Registration"
+        Me.StudentToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StudentSubjectListToolStripMenuItem, Me.RegisterStudentSubjectToolStripMenuItem})
+        Me.StudentToolStripMenuItem.Name = "StudentToolStripMenuItem"
+        Me.StudentToolStripMenuItem.Size = New System.Drawing.Size(180, 24)
+        Me.StudentToolStripMenuItem.Text = "Student"
         '
-        'EmailRegistrationToolStripMenuItem
+        'StudentSubjectListToolStripMenuItem
         '
-        Me.EmailRegistrationToolStripMenuItem.Name = "EmailRegistrationToolStripMenuItem"
-        Me.EmailRegistrationToolStripMenuItem.Size = New System.Drawing.Size(258, 24)
-        Me.EmailRegistrationToolStripMenuItem.Text = "Email Registration"
+        Me.StudentSubjectListToolStripMenuItem.Name = "StudentSubjectListToolStripMenuItem"
+        Me.StudentSubjectListToolStripMenuItem.Size = New System.Drawing.Size(294, 24)
+        Me.StudentSubjectListToolStripMenuItem.Text = "Student Subject List"
         '
-        'SubjectListToolStripMenuItem
+        'RegisterStudentSubjectToolStripMenuItem
         '
-        Me.SubjectListToolStripMenuItem.Name = "SubjectListToolStripMenuItem"
-        Me.SubjectListToolStripMenuItem.Size = New System.Drawing.Size(258, 24)
-        Me.SubjectListToolStripMenuItem.Text = "Subject List"
+        Me.RegisterStudentSubjectToolStripMenuItem.Name = "RegisterStudentSubjectToolStripMenuItem"
+        Me.RegisterStudentSubjectToolStripMenuItem.Size = New System.Drawing.Size(294, 24)
+        Me.RegisterStudentSubjectToolStripMenuItem.Text = "Register Student Subject"
         '
         'TeacherInformationToolStripMenuItem
         '
@@ -264,9 +265,7 @@ Partial Class MainMenuForm
     Friend WithEvents LogOutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UserManagementToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RegisterToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents StudentRegistrationToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents EmailRegistrationToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents SubjectListToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents StudentToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TeacherInformationToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents StudentInformationToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SubjectInformationToolStripMenuItem As ToolStripMenuItem
@@ -281,4 +280,6 @@ Partial Class MainMenuForm
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel
+    Friend WithEvents StudentSubjectListToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents RegisterStudentSubjectToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -269,6 +269,27 @@
     <Compile Include="Student Information\Student Information Update.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Student Information\StudentClass.vb" />
+    <Compile Include="Student Registration\Register Student Form.Designer.vb">
+      <DependentUpon>Register Student Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student Registration\Register Student Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Registration\Student Subject Information Form.Designer.vb">
+      <DependentUpon>Student Subject Information Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student Registration\Student Subject Information Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Registration\SubjectRegisterClass.vb" />
+    <Compile Include="Student Registration\ViewStudentForm.Designer.vb">
+      <DependentUpon>ViewStudentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student Registration\ViewStudentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subject Information\SubjectClass.vb" />
     <Compile Include="Subject Information\Subject Information Add.Designer.vb">
       <DependentUpon>Subject Information Add.vb</DependentUpon>
     </Compile>
@@ -305,6 +326,7 @@
     <Compile Include="Teacher Information\Teacher Information Update.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Teacher Information\TeacherClass.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Class Information\Class Information Add.resx">
@@ -376,6 +398,15 @@
     <EmbeddedResource Include="Student Information\Student Information Update.resx">
       <DependentUpon>Student Information Update.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Student Registration\Register Student Form.resx">
+      <DependentUpon>Register Student Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Registration\Student Subject Information Form.resx">
+      <DependentUpon>Student Subject Information Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Registration\ViewStudentForm.resx">
+      <DependentUpon>ViewStudentForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Subject Information\Subject Information Add.resx">
       <DependentUpon>Subject Information Add.vb</DependentUpon>
     </EmbeddedResource>
@@ -412,5 +443,6 @@
     <None Include="Resources\School_Isometric %281%29.png" />
     <None Include="Resources\Knowledge _Isometric.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

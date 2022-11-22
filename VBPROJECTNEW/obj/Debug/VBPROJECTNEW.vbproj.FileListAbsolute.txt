@@ -152,3 +152,6 @@ C:\Users\adami\Desktop\git\VbProjectLatest\VBPROJECTNEW\bin\Debug\System.Buffers
 C:\Users\adami\Desktop\git\VbProjectLatest\VBPROJECTNEW\bin\Debug\System.Memory.xml
 C:\Users\adami\Desktop\git\VbProjectLatest\VBPROJECTNEW\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\adami\Desktop\git\VbProjectLatest\VBPROJECTNEW\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\adami\Desktop\git\VbProjectLatest\VBPROJECTNEW\obj\Debug\VBPROJECTNEW.ViewStudentForm.resources
+C:\Users\adami\Desktop\git\VbProjectLatest\VBPROJECTNEW\obj\Debug\VBPROJECTNEW.Register_Student_Form.resources
+C:\Users\adami\Desktop\git\VbProjectLatest\VBPROJECTNEW\obj\Debug\VBPROJECTNEW.Student_Subject_Information_Form.resources

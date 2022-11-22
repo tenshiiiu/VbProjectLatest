@@ -50,6 +50,7 @@ Partial Class Teacher_Information_Form
         '
         'TeacherDataGridView
         '
+        Me.TeacherDataGridView.AllowUserToAddRows = False
         Me.TeacherDataGridView.BackgroundColor = System.Drawing.Color.White
         Me.TeacherDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.TeacherDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize

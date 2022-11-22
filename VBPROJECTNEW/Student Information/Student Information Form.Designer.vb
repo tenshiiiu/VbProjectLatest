@@ -51,9 +51,9 @@ Partial Class Student_Information_Form
         '
         'searchStudentTextBox
         '
-        Me.searchStudentTextBox.Location = New System.Drawing.Point(26, 110)
+        Me.searchStudentTextBox.Location = New System.Drawing.Point(33, 110)
         Me.searchStudentTextBox.Name = "searchStudentTextBox"
-        Me.searchStudentTextBox.Size = New System.Drawing.Size(696, 33)
+        Me.searchStudentTextBox.Size = New System.Drawing.Size(689, 33)
         Me.searchStudentTextBox.StateCommon.Back.Color1 = System.Drawing.Color.WhiteSmoke
         Me.searchStudentTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
         Me.searchStudentTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
@@ -67,6 +67,7 @@ Partial Class Student_Information_Form
         '
         'studentDataGridView
         '
+        Me.studentDataGridView.AllowUserToAddRows = False
         Me.studentDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.studentDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.studentDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(252, Byte), Integer), CType(CType(252, Byte), Integer))

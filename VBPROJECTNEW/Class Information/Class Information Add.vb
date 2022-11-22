@@ -36,5 +36,4 @@
         number.numberOnly(sender, e)
     End Sub
 
-
 End Class

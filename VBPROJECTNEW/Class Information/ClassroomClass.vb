@@ -1,6 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
 
-
 Friend Structure classroomRecord
     Dim class_id, class_name As String
     Dim current_student, maximum_student As Integer
@@ -73,6 +72,7 @@ Public Class ClassroomClass
             Mysqlconn.Open()
 
             Dim Command = New MySqlCommand("UPDATE classroom SET class_id = @class_id, class_name = @class_name, maximum_student = @maximum_student")
+            Command.Connection = Mysqlconn
 
             Command.Parameters.AddWithValue("@class_id", updateClassroomRecord.class_id)
             Command.Parameters.AddWithValue("@class_name", updateClassroomRecord.class_name)

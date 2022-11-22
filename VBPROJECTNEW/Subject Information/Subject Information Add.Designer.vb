@@ -26,15 +26,15 @@ Partial Class Subject_Information_Add
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.KryptonPalette1 = New ComponentFactory.Krypton.Toolkit.KryptonPalette(Me.components)
-        Me.maximumStudentTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
+        Me.AddSubjectFeeTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.classIDTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
+        Me.AddSubjectCreditTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.backButton = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.AddSubjectButton = New ComponentFactory.Krypton.Toolkit.KryptonButton()
-        Me.classLevelTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
+        Me.AddSubjectCodeTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.SubjectNameTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
+        Me.AddSubjectNameTextBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
@@ -50,21 +50,21 @@ Partial Class Subject_Information_Add
         Me.KryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(252, Byte), Integer), CType(CType(252, Byte), Integer))
         Me.KryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10, -1, -1, -1)
         '
-        'maximumStudentTextBox
+        'AddSubjectFeeTextBox
         '
-        Me.maximumStudentTextBox.Location = New System.Drawing.Point(324, 381)
-        Me.maximumStudentTextBox.Name = "maximumStudentTextBox"
-        Me.maximumStudentTextBox.Size = New System.Drawing.Size(390, 43)
-        Me.maximumStudentTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.maximumStudentTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
-        Me.maximumStudentTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+        Me.AddSubjectFeeTextBox.Location = New System.Drawing.Point(324, 381)
+        Me.AddSubjectFeeTextBox.Name = "AddSubjectFeeTextBox"
+        Me.AddSubjectFeeTextBox.Size = New System.Drawing.Size(390, 43)
+        Me.AddSubjectFeeTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.AddSubjectFeeTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
+        Me.AddSubjectFeeTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.maximumStudentTextBox.StateCommon.Border.Rounding = 10
-        Me.maximumStudentTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.maximumStudentTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.maximumStudentTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
-        Me.maximumStudentTextBox.TabIndex = 93
+        Me.AddSubjectFeeTextBox.StateCommon.Border.Rounding = 10
+        Me.AddSubjectFeeTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.AddSubjectFeeTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddSubjectFeeTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
+        Me.AddSubjectFeeTextBox.TabIndex = 93
         '
         'Label4
         '
@@ -77,21 +77,21 @@ Partial Class Subject_Information_Add
         Me.Label4.TabIndex = 92
         Me.Label4.Text = "Fee :"
         '
-        'classIDTextBox
+        'AddSubjectCreditTextBox
         '
-        Me.classIDTextBox.Location = New System.Drawing.Point(322, 296)
-        Me.classIDTextBox.Name = "classIDTextBox"
-        Me.classIDTextBox.Size = New System.Drawing.Size(390, 43)
-        Me.classIDTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.classIDTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
-        Me.classIDTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+        Me.AddSubjectCreditTextBox.Location = New System.Drawing.Point(322, 296)
+        Me.AddSubjectCreditTextBox.Name = "AddSubjectCreditTextBox"
+        Me.AddSubjectCreditTextBox.Size = New System.Drawing.Size(390, 43)
+        Me.AddSubjectCreditTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.AddSubjectCreditTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
+        Me.AddSubjectCreditTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.classIDTextBox.StateCommon.Border.Rounding = 10
-        Me.classIDTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.classIDTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.classIDTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
-        Me.classIDTextBox.TabIndex = 90
+        Me.AddSubjectCreditTextBox.StateCommon.Border.Rounding = 10
+        Me.AddSubjectCreditTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.AddSubjectCreditTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddSubjectCreditTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
+        Me.AddSubjectCreditTextBox.TabIndex = 90
         '
         'Label6
         '
@@ -136,7 +136,7 @@ Partial Class Subject_Information_Add
         '
         'AddSubjectButton
         '
-        Me.AddSubjectButton.Location = New System.Drawing.Point(322, 455)
+        Me.AddSubjectButton.Location = New System.Drawing.Point(324, 452)
         Me.AddSubjectButton.Name = "AddSubjectButton"
         Me.AddSubjectButton.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
         Me.AddSubjectButton.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
@@ -164,21 +164,21 @@ Partial Class Subject_Information_Add
         Me.AddSubjectButton.TabIndex = 88
         Me.AddSubjectButton.Values.Text = "Add Subject"
         '
-        'classLevelTextBox
+        'AddSubjectCodeTextBox
         '
-        Me.classLevelTextBox.Location = New System.Drawing.Point(324, 137)
-        Me.classLevelTextBox.Name = "classLevelTextBox"
-        Me.classLevelTextBox.Size = New System.Drawing.Size(390, 43)
-        Me.classLevelTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.classLevelTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
-        Me.classLevelTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+        Me.AddSubjectCodeTextBox.Location = New System.Drawing.Point(324, 137)
+        Me.AddSubjectCodeTextBox.Name = "AddSubjectCodeTextBox"
+        Me.AddSubjectCodeTextBox.Size = New System.Drawing.Size(390, 43)
+        Me.AddSubjectCodeTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.AddSubjectCodeTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
+        Me.AddSubjectCodeTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.classLevelTextBox.StateCommon.Border.Rounding = 10
-        Me.classLevelTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.classLevelTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.classLevelTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
-        Me.classLevelTextBox.TabIndex = 87
+        Me.AddSubjectCodeTextBox.StateCommon.Border.Rounding = 10
+        Me.AddSubjectCodeTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.AddSubjectCodeTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddSubjectCodeTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
+        Me.AddSubjectCodeTextBox.TabIndex = 87
         '
         'Label2
         '
@@ -191,21 +191,21 @@ Partial Class Subject_Information_Add
         Me.Label2.TabIndex = 86
         Me.Label2.Text = "Subject Code :"
         '
-        'SubjectNameTextBox
+        'AddSubjectNameTextBox
         '
-        Me.SubjectNameTextBox.Location = New System.Drawing.Point(324, 217)
-        Me.SubjectNameTextBox.Name = "SubjectNameTextBox"
-        Me.SubjectNameTextBox.Size = New System.Drawing.Size(390, 43)
-        Me.SubjectNameTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.SubjectNameTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
-        Me.SubjectNameTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
+        Me.AddSubjectNameTextBox.Location = New System.Drawing.Point(324, 217)
+        Me.AddSubjectNameTextBox.Name = "AddSubjectNameTextBox"
+        Me.AddSubjectNameTextBox.Size = New System.Drawing.Size(390, 43)
+        Me.AddSubjectNameTextBox.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.AddSubjectNameTextBox.StateCommon.Border.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.Solid
+        Me.AddSubjectNameTextBox.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.SubjectNameTextBox.StateCommon.Border.Rounding = 10
-        Me.SubjectNameTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
-        Me.SubjectNameTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SubjectNameTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
-        Me.SubjectNameTextBox.TabIndex = 84
+        Me.AddSubjectNameTextBox.StateCommon.Border.Rounding = 10
+        Me.AddSubjectNameTextBox.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(159, Byte), Integer))
+        Me.AddSubjectNameTextBox.StateCommon.Content.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddSubjectNameTextBox.StateCommon.Content.Padding = New System.Windows.Forms.Padding(10)
+        Me.AddSubjectNameTextBox.TabIndex = 84
         '
         'Label1
         '
@@ -223,15 +223,15 @@ Partial Class Subject_Information_Add
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1008, 561)
-        Me.Controls.Add(Me.maximumStudentTextBox)
+        Me.Controls.Add(Me.AddSubjectFeeTextBox)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.classIDTextBox)
+        Me.Controls.Add(Me.AddSubjectCreditTextBox)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.backButton)
         Me.Controls.Add(Me.AddSubjectButton)
-        Me.Controls.Add(Me.classLevelTextBox)
+        Me.Controls.Add(Me.AddSubjectCodeTextBox)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.SubjectNameTextBox)
+        Me.Controls.Add(Me.AddSubjectNameTextBox)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Subject_Information_Add"
         Me.Palette = Me.KryptonPalette1
@@ -245,14 +245,14 @@ Partial Class Subject_Information_Add
     End Sub
 
     Friend WithEvents KryptonPalette1 As ComponentFactory.Krypton.Toolkit.KryptonPalette
-    Friend WithEvents maximumStudentTextBox As KryptonTextBox
+    Friend WithEvents AddSubjectFeeTextBox As KryptonTextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents classIDTextBox As KryptonTextBox
+    Friend WithEvents AddSubjectCreditTextBox As KryptonTextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents backButton As KryptonButton
     Friend WithEvents AddSubjectButton As KryptonButton
-    Friend WithEvents classLevelTextBox As KryptonTextBox
+    Friend WithEvents AddSubjectCodeTextBox As KryptonTextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents SubjectNameTextBox As KryptonTextBox
+    Friend WithEvents AddSubjectNameTextBox As KryptonTextBox
     Friend WithEvents Label1 As Label
 End Class
